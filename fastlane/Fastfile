@@ -1,3 +1,3 @@
 lane :test do
-  install_certificates
+  install_certificates(passphrase: "123456789")
 end

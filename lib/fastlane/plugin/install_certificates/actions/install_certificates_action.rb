@@ -29,7 +29,11 @@ module Fastlane
       end
 
       def self.install_certificate(certificate, passphrase)
-        `security -i import #{certificate} -P #{passphrase} -T /usr/bin/codesign`
+        if passphrase.eql?("")
+          `security -i import #{certificate} -P "" -T /usr/bin/codesign`
+        else
+          `security -i import #{certificate} -P #{passphrase} -T /usr/bin/codesign`
+        end
       end
 
       #####################################################

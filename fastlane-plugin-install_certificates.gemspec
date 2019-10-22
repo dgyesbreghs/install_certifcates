@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.author        = 'Dylan Gyesbreghs'
   spec.email         = 'dgyesbreghs@gmail.com'
 
-  spec.summary       = 'Install all the certificates located in you're project.'
+  spec.summary       = "Install all the certificates located in you're project."
   # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-install_certificates"
   spec.license       = "MIT"
 
