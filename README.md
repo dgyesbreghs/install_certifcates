@@ -14,7 +14,12 @@ fastlane add_plugin install_certificates
 
 Install all the certificates located in you're project.
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+Just check in all the provisioning profiles needed to compile you're project, and we take care of the rest.
+
+You can pass a passphrase with the following option.
+```ruby
+install_certificates(passphrase: "123456789")
+```
 
 ## Example
 
